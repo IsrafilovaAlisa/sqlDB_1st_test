@@ -1,0 +1,30 @@
+﻿<Window x:Class="studieren.AddUsers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:studieren"
+        mc:Ignorable="d"
+        Title="AddUsers" Height="461" Width="800">
+    <Grid Margin="0,0,0,6">
+        <TextBox x:Name="addName" FontSize="25" Foreground="Black" Text="Ввод имени" Margin="311,121,237,257"/>
+        <TextBox x:Name="addMounth" FontSize="25" Foreground="Black" Text="Ввод месяца" Margin="311,193,237,181" ></TextBox>
+
+        <ComboBox x:Name="addType" FontSize="18"  Margin="311,272,237,114" SelectionChanged="addType_SelectionChanged" >
+            <ComboBoxItem Content="INEFB"/>
+            <ComboBoxItem Content="MFTI"/>
+            <ComboBoxItem Content="ATM"/>
+            
+
+
+        </ComboBox>
+
+        <TextBlock FontSize="28" Foreground="Black" Text="Добавление нового пользователя" Margin="174,0,174,370"></TextBlock>
+        <TextBlock FontSize="25" Foreground="Black" Text="Имя пользователя:" Margin="78,121,494,257"></TextBlock>
+        <TextBlock FontSize="25" Foreground="Black" Text="Месяц рождения:" Margin="78,193,494,181"></TextBlock>
+        <TextBlock FontSize="25" Foreground="Black" Text="Факультет:" Margin="78,272,486,114"></TextBlock>
+
+        <Button x:Name="applyButton"  Content="Применить" Click="applyButton_Click" Margin="319,381,363,0" FontSize="18"></Button>
+        
+    </Grid>
+</Window>
